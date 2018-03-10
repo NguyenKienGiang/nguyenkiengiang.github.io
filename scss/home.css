@@ -1,0 +1,104 @@
+/*===========================================================================================================================*/
+@media all and (min-width: 320px) {
+  .responsive-col {
+    width: 100%;
+    padding: 1rem 0rem; }
+
+  .display-table {
+    width: 100%; }
+
+  /*===============Auto================*/
+  .light-house {
+    background: #232323; }
+    .light-house .wellcome {
+      padding: 1.5rem 0rem;
+      color: #c4c4c4;
+      transition: ease .4s; }
+      .light-house .wellcome:hover {
+        margin-left: 10px; }
+
+  .store-tool {
+    padding: 2.5rem 0rem; }
+    .store-tool .btn {
+      border-radius: 25px; }
+    .store-tool .display-table {
+      display: block; }
+    .store-tool .table-cell p {
+      font-weight: 1000;
+      padding-left: 1rem;
+      border-left: 0.1rem solid #ccc; }
+    .store-tool .table-cell .cart-all-price {
+      font-weight: 500;
+      color: #565656; }
+    .store-tool .table-cell.pull-right.responsive-col {
+      min-width: 221px; }
+
+  .giang-logo {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 4rem; }
+
+  .cart-icon {
+    padding: 1.7rem 2rem;
+    background: #ed4e24;
+    border-radius: 50%;
+    display: block;
+    float: left;
+    margin-right: 10px; }
+    .cart-icon span {
+      color: #fff;
+      margin: 0rem;
+      font-size: 1.4rem; } }
+/*===========================================================================================================================*/
+@media all and (min-width: 768px) {
+  .display-table {
+    width: auto; }
+
+  .responsive-col-30 {
+    width: 30%;
+    float: left; }
+
+  .responsive-col-70 {
+    width: 70%;
+    float: left; }
+
+  /*===============Auto================*/
+  .nav.navbar-nav .nav-tool__link {
+    padding: 0.5rem 0rem; }
+    .nav.navbar-nav .nav-tool__link a {
+      border-right: 0.1rem solid;
+      padding: 1rem 1.5rem; }
+
+  .dropdown-menu li {
+    padding: 0; }
+    .dropdown-menu li a {
+      border: none !important; }
+
+  .store-tool .display-table {
+    display: table; }
+  .store-tool .input-group {
+    margin-left: 60px; }
+
+  .store-tool .table-cell.pull-right.responsive-col {
+    min-width: auto; }
+
+  .my-card-desc {
+    display: none; } }
+/*===========================================================================================================================*/
+@media all and (min-width: 992px) {
+  .store-tool .table-cell.pull-right.responsive-col {
+    min-width: 221px; }
+
+  .my-card-desc {
+    display: table-cell; } }
+/*===========================================================================================================================*/
+@media all and (min-width: 1024px) {
+  .store-tool .input-group {
+    margin-left: 0;
+    max-width: 415px; } }
+/*===========================================================================================================================*/
+@media all and (min-width: 1200px) {
+  .store-tool .btn .caret {
+    margin-left: 40px; } }
+
+/*# sourceMappingURL=home.css.map */

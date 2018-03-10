@@ -1,0 +1,86 @@
+.navbar-default{
+	background-color: transparent;
+	border: none;
+}
+.navbar{
+	margin-bottom: 0;
+}
+/*===========================================================================================================================*/
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+	background: transparent;
+	color: #fff;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #c4c4c4;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+    color: #fff;
+    text-shadow:0 0 10px rgba(255,255,255,1), 0 0 20px rgba(255,255,255,1), 0 0 30px rgba(255,255,255,1), 0 0 40px #fbfbfb, 0 0 70px #ffffff, 0 0 40px #f5f0f4, 0 0 50px #ffffff;
+}
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover{
+	background: transparent;
+}
+.btn-default:hover, .btn-default:active, .btn-default:focus{
+	background: transparent;
+}
+/*===========================================================================================================================*/
+.dropdown-menu{
+	left: auto;
+	border-radius: 0;
+}
+/*===========================================================================================================================*/
+.input-group-btn:focus, .input-group:focus, .input-group-btn>.btn:focus {
+	outline: none;
+}
+
+/*===========================================================================================================================*/
+.glyphicon{
+	margin: 0px 5px 0px 0px;
+}
+/*===========================================================================================================================*/
+.input-group{
+	max-width: 340px;
+}
+/*===========================================================================================================================*/
+@media all and (min-width: 320px) {
+	.navbar-toggle{
+		border-radius: 0;
+	}
+	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+		background: transparent;
+	}
+	.navbar-default {
+	    position: absolute;
+	    right: 0;
+	}
+	.navbar-collapse.collapse.in, .navbar-collapse.collapsing{
+	    width: 200px;
+    	background: #232323;
+    	/*lấp mục bên dưới*/
+    	z-index: 3;
+    	position: relative;
+	}
+}
+
+/* Dành cho máy tính bảng chiều dọc */
+@media all and (min-width: 768px) {
+	.navbar-default {
+	    position: static;
+	    right: auto;
+	}
+	.dropdown:hover .dropdown-menu{
+		display: block;
+		min-width: 150.19px;
+	}
+	.open>.dropdown-menu{
+		min-width: 150.19px;
+	}
+}
+/* Dành cho máy tính bảng chiều ngang */
+@media all and (min-width: 1024px) {
+
+}
+/* Dành cho màn hình desktop */
+@media all and (min-width: 1280px) {
+	
+}
