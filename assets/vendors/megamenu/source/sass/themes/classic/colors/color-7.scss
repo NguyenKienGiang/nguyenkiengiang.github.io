@@ -1,0 +1,40 @@
+$color1: #55B4AB;
+$color2: #009688;
+
+@import "../../../mixins";
+.awemenu-classic-color-7 {
+	&.awemenu-classic {
+		.awemenu-container {
+			@include background-gradient($color1, $color2);
+		}
+		.awemenu-left,
+		.awemenu-right,
+		.awemenu-outleft,
+		.awemenu-outright {
+			.awemenu {
+				@include background-gradient($color1, $color2);
+				> .awemenu-item {
+					> a {
+						border: 0;
+						border-bottom: 1px solid rgba(#000, .1);
+						border-top: 1px solid rgba(#fff, .1);
+					}
+				}
+			}
+		}
+		.awemenu {
+			> .awemenu-item {
+				> a {
+					color: #fff;
+					border-left: 1px solid rgba(#000, .1);
+					border-right: 1px solid rgba(#fff, .1);
+				}
+				&:hover > a,
+				&.awemenu-active > a {
+					color: #fff;
+					@include background-gradient($color2, $color1);
+				}
+			}
+		}
+	}
+}

@@ -1,223 +1,712 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<!-- Meta -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Title -->
-	<title>Welcome to Wapik! | About Us</title>
-	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat|Merriweather" rel="stylesheet">
-	<!-- Favicon -->
-	<link rel="icon" href="images/commons/favico.gif">
-	<!-- Normalize CSS -->
-	<link rel="stylesheet" href="css/normalize.css">
-	<!-- Grid CSS -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Animate CSS -->
-	<!-- <link rel="stylesheet" href="css/animate.css"> -->
-	<!-- Custom CSS -->
-	<link rel="stylesheet" href="css/style.css">
-	<!-- Jquery -->
-	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
-	<!-- Bootstrap JS -->
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-</head>
-<body>
-	<div class="scroll-line" id="scrollLine"></div>
-	<div id="mySidenav">
-		<span class="closebtn" onclick="closeNav()"></span>
-		<a href="index.html" class="sidenav__link">HOME</a>
-		<a href="about.html" class="sidenav__link">ABOUT US</a>
-		<a href="pricing.html" class="sidenav__link">PRICING</a>
-		<a href="contact.html" class="sidenav__link">CONTACT US</a>
-		<a href="post.html" class="sidenav__link">POST</a>
-		<a href="javascript:;" class="sidenav__link ">GET STARTED</a>
-	</div>
-	<div id="main">
-		<header id="header" class="aboutHeader">
-			<div class="container">
-				<div class="header__top header__top-about" data-spy="affix" data-offset-top="600">
-					<span id="collapse-menu" class="index-collapse" onclick="openNav();"></span>
-					<div class="row">
-						<div class="col-lg-5 col-sm-4">
-							<div class="top__logo">
-								<a href="javascript:;" class="logo__main"><img src="images/commons/logo-white.png" alt=""></a>
-								<a class="logo__phone logo__phone-index" href="javascript:;">+62 202 555 0117</a>
-							</div>
+	<head>
+		<title>about</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- Fonts-->
+		<link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/fonts/pe-icon/pe-icon.css">
+		<link rel="stylesheet" type="text/css" href="assets/fonts/beaupet/beaupet.css">
+		<!-- Vendors-->
+		<link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/swiper/swiper.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/select2/select2.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/wow/animate.css">
+		<!-- App & fonts-->
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700%7CRaleway:100,200,300,400,700">
+		<link rel="stylesheet" type="text/css" id="app-stylesheet" href="assets/css/main.css"><!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		<div class="page-wrap" id="root">
+			
+			<!-- header -->
+			<header class="header">
+				<div class="container">
+					<div class="header__inner">
+						<div class="header__left">
+							<div class="header__logo"><a href="home.html"><img src="assets/img/logo.png" alt=""/></a></div>
 						</div>
-						<div class="col-lg-7 col-sm-8">
-							<ul class="top__nav pull-right list-unstyled" id="top__nav">
-								<li class="nav-list__item"><a class="nav__link nav__link-index" href="index.html">HOME</a></li>
-								<li class="nav-list__item"><a class="nav__link nav__active" href="about.html">ABOUT US</a></li>
-								<li class="nav-list__item"><a class="nav__link nav__link-index" href="pricing.html">PRICING</a></li>
-								<li class="nav-list__item"><a class="nav__link nav__link-index" href="contact.html">CONTACT US</a></li>
-								<li class="nav-list__item"><a class="nav__link nav__link-index" href="post.html">POST</a></li>
-								<li class="nav-list__item"><a class="nav__link nav__getstarted nav__getstarted-index" href="javascript:;">GET STARTED</a></li>
-							</ul>
+						<div class="header__right">
+							
+							<!-- page-nav -->
+							<nav class="page-nav">
+								
+								<!-- page-menu -->
+								<ul class="page-menu">
+									<li><a href="home.html">home</a>
+									</li>
+									<li class="menu-item-has-children"><a href="blog.html">blog</a>
+										<ul class="sub-menu">
+											<li><a href="blog-detail.html">blog-detail</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu-item-has-children"><a href="#">Page</a>
+										<ul class="sub-menu">
+											<li class="current-menu-item"><a href="about.html">about</a>
+											</li>
+											<li><a href="gallery.html">gallery</a>
+											</li>
+											<li><a href="contact.html">contact</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu-item-has-children"><a href="#">Elements</a>
+										<ul class="sub-menu">
+											<li><a href="element-alert.html">element alert</a>
+											</li>
+											<li><a href="element-animation.html">element animation</a>
+											</li>
+											<li><a href="element-breadcrumb.html">element breadcrumb</a>
+											</li>
+											<li><a href="element-button.html">element button</a>
+											</li>
+											<li><a href="element-card.html">element card</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu-item-has-children"><a href="#">More</a>
+										<ul class="sub-menu">
+											<li><a href="element-dropcap.html">element dropcap</a>
+											</li>
+											<li><a href="element-form.html">element form</a>
+											</li>
+											<li><a href="element-pagination.html">element pagination</a>
+											</li>
+											<li><a href="element-popup.html">element popup</a>
+											</li>
+											<li><a href="element-swiper.html">element swiper</a>
+											</li>
+											<li><a href="element-table.html">element table</a>
+											</li>
+											<li><a href="element-tooltip.html">element tooltip</a>
+											</li>
+										</ul>
+									</li>
+								</ul><!-- page-menu -->
+								
+								<div class="navbar-toggle"><span></span><span></span><span></span></div>
+							</nav><!-- End / page-nav -->
+							
+							<div class="header__hotline">
+								<div class="header__box">
+									<h2 class="header__title">What are you looking for?
+										<label class="header__iconclose"><i class="pe-7s-close"></i></label>
+									</h2>
+									<input type="text" placehoder="Search..." id="comment"/>
+								</div>
+								<div class="header__click"></div>
+								<label class="header__iconsearch" for="comment"><i class="pe-7s-search"></i></label>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="about-header__desc text-center">
-					<h1 class="about-header__title">Cras justo odio, dapibus ac facilisis in egestas eget quam</h1>
-					<a href="javascript:;" class="header__link btn btn-success btn-lg">Start Your Free Trial</a>
-				</div>
+				<div class="header__wave"></div>
+			</header><!-- End / header -->
+			
+			<!-- Content-->
+			<div class="md-content">
+				
+				<!-- Section -->
+				<section class="md-section about-section" style="background-color:#FBF8F2;background:linear-gradient(180deg, #FBF8F2 0%, #F3EEDB 100%);">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-xl-8 offset-12 offset-sm-0 offset-md-0 offset-lg-0 offset-xl-2 ">
+								
+								<!-- title -->
+								<div class="title title__center">
+									<h2 class="title__title">Who are you<img src="assets/img/wave-gold.svg" alt=""/></h2>
+									<p class="title__desc">Welcome to our website! We're glad you took the time to visit us online. Take a moment to tour our facility, meet our staff, discover our services, or even submit an inquiry.</p>
+								</div><!-- End / title -->
+								
+							</div>
+						</div>
+						<div class="row mb-250 row-eq-height">
+							<div class="col-12 col-xl-5 offset-12 offset-sm-0 offset-md-0 offset-lg-0 offset-xl-1 ">
+								
+								<!-- textbox-02 -->
+								<div class="textbox-02" style="background-image: url('assets/img/blog/9.jpg');"><img src="assets/img/blog/9.jpg" alt=""/>
+								</div><!-- End / textbox-02 -->
+								
+							</div>
+							<div class="col-12 col-xl-5  content">
+								<p style="margin-bottom: 60px;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+								<div class="row">
+									<div class="col-sm-6 ">
+										<ul class="list-circle">
+											<li>10GB Space amount</li>
+											<li>Unlimited users</li>
+											<li>30GB Bandwidth</li>
+											<li>Enhanced Security</li>
+											<li>20 MySQL Databases</li>
+											<li>X Games Aspen 2016</li>
+										</ul>
+									</div>
+									<div class="col-sm-6 ">
+										<ul class="list-circle">
+											<li>20GB Bandwidth</li>
+											<li>Enhanced Security</li>
+											<li>20 MySQL Databases</li>
+											<li>X Games Aspen 2016</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- flag -->
+						<div class="flag"><img src="assets/img/banner/4.png" alt=""/>
+						</div><!-- End / flag -->
+						
+					</div>
+				</section>
+				<!-- End / Section -->
+				
+				
+				<!-- section-background -->
+				<section class="section-background wave-section" style="background-image: url('assets/img/banner/1.jpg');">
+					<div class="section-background__overlay"></div>
+					<div class="section-background__wrapper">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 offset-0 offset-sm-0 offset-md-2 ">
+									
+									<!-- title -->
+									<div class="title title__center-light">
+										<h2 class="title__title">Why choose us?<img src="assets/img/wave-light.svg" alt=""/></h2>
+									</div><!-- End / title -->
+									
+								</div>
+								<div class="col-md-5 offset-0 offset-sm-0 offset-md-1 ">
+									<p class="text">Nam suscipit nisi risus, et porttitor metus molestie a. Phasellus id quam id turpis suscipit pretium. Maecenas ultrices, lacus ut accumsan maximus, odio augue rhoncus augue, vulputate maximus mi sapie</p>
+									<div class="full-element mt-70">
+										<div class="half-element">
+											
+											<!-- textbox-01 -->
+											<div class="textbox-01">
+												<h2 class="textbox-01__bigNum">1.20<span class="textbox-01__sub">k</span></h2><span class="textbox-01__text">Projects Completed</span>
+											</div><!-- End / textbox-01 -->
+											
+										</div>
+										<div class="half-element">
+											
+											<!-- textbox-01 -->
+											<div class="textbox-01">
+												<h2 class="textbox-01__bigNum">750<span class="textbox-01__sub">.000</span></h2><span class="textbox-01__text">Awards</span>
+											</div><!-- End / textbox-01 -->
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-md-5 offset-0 offset-sm-0 offset-md-1 ">
+									
+									<!-- accordion -->
+									<div class="accordion accordion--light" id="accordionParent">
+										
+										<!-- card -->
+										<div class="card">
+											<div class="card-header" id="headingOne"><a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" role="button">10GB Space amount</a></div>
+											<div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionParent">
+												<div class="card-body">
+													<p>Suspendisse ac elit vitae est lacinia interdum eu sit amet mauris. Phasellus aliquam nisi sit amet libero mattis ornare. In varius nunc vel suscipit rhoncus. Nunc hendrerit nisl nec orci eleifend accu</p>
+												</div>
+											</div>
+										</div><!-- End / card -->
+										
+										
+										<!-- card -->
+										<div class="card">
+											<div class="card-header" id="headingTwo"><a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" role="button">Unlimited users</a></div>
+											<div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionParent">
+												<div class="card-body">
+													<p>Duis porttitor libero ac egestas euismod. Maecenas quis felis turpis. Nulla quis turpis sed augue egestas dapibus vel at nibh. Nullam at justo at arcu egestas laoreet. Integer nunc mauris, interdum si</p>
+												</div>
+											</div>
+										</div><!-- End / card -->
+										
+										
+										<!-- card -->
+										<div class="card">
+											<div class="card-header" id="headingThree"><a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" role="button">30GB Bandwidth</a></div>
+											<div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionParent">
+												<div class="card-body">
+													<p>Integer placerat ullamcorper urna nec rhoncus. Sed velit justo, lacinia non sapien imperdiet, sagittis fringilla risus. Nulla in est lobortis massa consectetur scelerisque. Etiam eu metus leo. Mauris </p>
+												</div>
+											</div>
+										</div><!-- End / card -->
+										
+										
+										<!-- card -->
+										<div class="card">
+											<div class="card-header" id="headingFour"><a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" role="button">Enhanced Security</a></div>
+											<div class="collapse" id="collapseFour" aria-labelledby="headingFour" data-parent="#accordionParent">
+												<div class="card-body">
+													<p>Maecenas lorem ex, euismod eget pulvinar non, facilisis ut leo. Quisque placerat purus in neque efficitur ornare. Nam at justo magna. Aliquam venenatis odio ante, non euismod augue porttitor eget. Mae</p>
+												</div>
+											</div>
+										</div><!-- End / card -->
+										
+										
+										<!-- card -->
+										<div class="card">
+											<div class="card-header" id="headingFour"><a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" role="button">20 MySQL Databases</a></div>
+											<div class="collapse" id="collapseFour" aria-labelledby="headingFour" data-parent="#accordionParent">
+												<div class="card-body">
+													<p>Nam suscipit nisi risus, et porttitor metus molestie a. Phasellus id quam id turpis suscipit pretium. Maecenas ultrices, lacus ut accumsan maximus, odio augue rhoncus augue, vulputate maximus mi sapie</p>
+												</div>
+											</div>
+										</div><!-- End / card -->
+										
+									</div><!-- End / accordion -->
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</section><!-- End / section-background -->
+				
+				
+				<!-- Section -->
+				<section class="md-section pb-100">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 offset-0 offset-sm-0 offset-md-2 ">
+								
+								<!-- title -->
+								<div class="title title__center">
+									<h2 class="title__title">Service<img src="assets/img/wave-gold.svg" alt=""/></h2>
+								</div><!-- End / title -->
+								
+							</div>
+						</div>
+						<div class="row row-eq-height">
+							<div class="col-md-6 col-lg-3 ">
+								
+								<!-- services -->
+								<div class="services md-text-center">
+									<div class="services__icon"><i class="beaupet beaupet-syringe-pet"></i></div>
+									<h2 class="services__title">Medicine Service</h2>
+									<div class="services__desc">Mauris lacinia venenatis dolor sit amet viverra. Integer malesuada nulla neque. Sed rutrum ligu</div>
+								</div><!-- End / services -->
+								
+							</div>
+							<div class="col-md-6 col-lg-3 ">
+								
+								<!-- services -->
+								<div class="services md-text-center">
+									<div class="services__icon"><i class="beaupet beaupet-food-pet"></i></div>
+									<h2 class="services__title">Quality foods</h2>
+									<div class="services__desc">Sed ante nisl, fermentum et facilisis in, maximus sed ipsum. Cras hendrerit feugiat eros, ut fr</div>
+								</div><!-- End / services -->
+								
+							</div>
+							<div class="col-md-6 col-lg-3 ">
+								
+								<!-- services -->
+								<div class="services md-text-center">
+									<div class="services__icon"><i class="beaupet beaupet-lotion-pet"></i></div>
+									<h2 class="services__title">Cleaning pets</h2>
+									<div class="services__desc">Maecenas lorem ex, euismod eget pulvinar non, facilisis ut leo. Quisque placerat purus in neque</div>
+								</div><!-- End / services -->
+								
+							</div>
+							<div class="col-md-6 col-lg-3 ">
+								
+								<!-- services -->
+								<div class="services md-text-center">
+									<div class="services__icon"><i class="beaupet beaupet-toy-pet"></i></div>
+									<h2 class="services__title">Pet training</h2>
+									<div class="services__desc">Sed ante nisl, fermentum et facilisis in, maximus sed ipsum. Cras hendrerit feugiat eros, ut fr</div>
+								</div><!-- End / services -->
+								
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End / Section -->
+				
+				
+				<!-- section-background -->
+				<section class="section-background section-background__brown wave-section2 testimonial-slide" style="background-image: url('assets/img/banner/2.jpg');">
+					<div class="section-background__overlay"></div>
+					<div class="section-background__wrapper">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-8 offset-0 offset-sm-0 offset-md-2 ">
+									<div class="wrapper-element">
+										
+										<!-- swiper__module swiper-container -->
+										<div class="swiper__module swiper-container" data-options='{"slidesPerView":1,"slidesPerColumn":1,"spaceBetween":0,"effect":"fade"}'>
+											<div class="swiper-wrapper">
+												
+												<!-- testimonial -->
+												<div class="testimonial">
+													<p class="testimonial__quote"><span>Integer placerat ullamcorper urna nec rhoncus. Sed velit justo, lacinia non sapien imperdiet, sagittis fringilla risus. Nulla in est lobortis massa consectetur scelerisque. Etiam eu metus leo. Mauris </span></p>
+													<div class="testimonial__table">
+														<div class="testimonial__tableCell">
+															<h2 class="testimonial__name">Daniel Ramirez</h2>
+														</div>
+														<div class="testimonial__tableCell"><img class="testimonial__avatar" src="https://uinames.com/api/photos/female/1.jpg" alt=""/></div>
+														<div class="testimonial__tableCell">
+															<p class="testimonial__text">@Samper forward</p>
+														</div>
+													</div>
+												</div><!-- End / testimonial -->
+												
+												
+												<!-- testimonial -->
+												<div class="testimonial">
+													<p class="testimonial__quote"><span>Nam suscipit nisi risus, et porttitor metus molestie a. Phasellus id quam id turpis suscipit pretium. Maecenas ultrices, lacus ut accumsan maximus, odio augue rhoncus augue, vulputate maximus mi sapie</span></p>
+													<div class="testimonial__table">
+														<div class="testimonial__tableCell">
+															<h2 class="testimonial__name">Brittany Williams</h2>
+														</div>
+														<div class="testimonial__tableCell"><img class="testimonial__avatar" src="https://uinames.com/api/photos/male/8.jpg" alt=""/></div>
+														<div class="testimonial__tableCell">
+															<p class="testimonial__text">@Samper forward</p>
+														</div>
+													</div>
+												</div><!-- End / testimonial -->
+												
+												
+												<!-- testimonial -->
+												<div class="testimonial">
+													<p class="testimonial__quote"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet ut lacus a tincidunt. Quisque luctus nibh augue, non ultrices arcu molestie in. Integer finibus dolor lorem, tempor pretium lectus o</span></p>
+													<div class="testimonial__table">
+														<div class="testimonial__tableCell">
+															<h2 class="testimonial__name">Bryan Ryan</h2>
+														</div>
+														<div class="testimonial__tableCell"><img class="testimonial__avatar" src="https://uinames.com/api/photos/male/19.jpg" alt=""/></div>
+														<div class="testimonial__tableCell">
+															<p class="testimonial__text">@Samper forward</p>
+														</div>
+													</div>
+												</div><!-- End / testimonial -->
+												
+												
+												<!-- testimonial -->
+												<div class="testimonial">
+													<p class="testimonial__quote"><span>Duis porttitor libero ac egestas euismod. Maecenas quis felis turpis. Nulla quis turpis sed augue egestas dapibus vel at nibh. Nullam at justo at arcu egestas laoreet. Integer nunc mauris, interdum si</span></p>
+													<div class="testimonial__table">
+														<div class="testimonial__tableCell">
+															<h2 class="testimonial__name">Alice Brooks</h2>
+														</div>
+														<div class="testimonial__tableCell"><img class="testimonial__avatar" src="https://uinames.com/api/photos/male/17.jpg" alt=""/></div>
+														<div class="testimonial__tableCell">
+															<p class="testimonial__text">@Samper forward</p>
+														</div>
+													</div>
+												</div><!-- End / testimonial -->
+												
+												
+												<!-- testimonial -->
+												<div class="testimonial">
+													<p class="testimonial__quote"><span>Curabitur elementum urna augue, eu porta purus gravida in. Cras consectetur, lorem a cursus vestibulum, ligula purus iaculis nulla, in dignissim risus turpis id justo. Sed eleifend ante et ligula elei</span></p>
+													<div class="testimonial__table">
+														<div class="testimonial__tableCell">
+															<h2 class="testimonial__name">Ann Fowler</h2>
+														</div>
+														<div class="testimonial__tableCell"><img class="testimonial__avatar" src="https://uinames.com/api/photos/female/4.jpg" alt=""/></div>
+														<div class="testimonial__tableCell">
+															<p class="testimonial__text">@Samper forward</p>
+														</div>
+													</div>
+												</div><!-- End / testimonial -->
+												
+											</div>
+											<div class="swiper-button-custom">
+												<div class="swiper-button-prev-custom"><i class="pe-7s-angle-left"></i></div>
+												<div class="swiper-button-next-custom"><i class="pe-7s-angle-right"></i></div>
+											</div>
+										</div><!-- End / swiper__module swiper-container -->
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section><!-- End / section-background -->
+				
+				
+				<!-- Section -->
+				<section class="md-section">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 offset-0 offset-sm-0 offset-md-2 ">
+								
+								<!-- title -->
+								<div class="title title__center">
+									<h2 class="title__title">Meet the team<img src="assets/img/wave-gold.svg" alt=""/></h2>
+								</div><!-- End / title -->
+								
+							</div>
+							<div class="col-md-12  pb-lg-100">
+								<div class="five-element">
+									
+									<!-- team -->
+									<div class="team">
+										<div class="team__wrapper">
+											<div class="team__captions">
+												<h2 class="team__name">Lois Lane</h2><span class="team__position">Pet Career</span>
+											</div>
+											<div class="team__media"><img src="assets/img/team/1.jpg" alt=""/></div>
+										</div>
+									</div><!-- End / team -->
+									
+								</div>
+								<div class="five-element">
+									
+									<!-- team -->
+									<div class="team">
+										<div class="team__wrapper">
+											<div class="team__captions">
+												<h2 class="team__name">Lana Lang</h2><span class="team__position">Pet Trainer</span>
+											</div>
+											<div class="team__media"><img src="assets/img/team/2.jpg" alt=""/></div>
+										</div>
+									</div><!-- End / team -->
+									
+								</div>
+								<div class="five-element">
+									
+									<!-- team -->
+									<div class="team">
+										<div class="team__wrapper">
+											<div class="team__captions">
+												<h2 class="team__name">Martha Kent</h2><span class="team__position">Pet Career</span>
+											</div>
+											<div class="team__media"><img src="assets/img/team/1.jpg" alt=""/></div>
+										</div>
+									</div><!-- End / team -->
+									
+								</div>
+								<div class="five-element">
+									
+									<!-- team -->
+									<div class="team">
+										<div class="team__wrapper">
+											<div class="team__captions">
+												<h2 class="team__name">Chloe Sullivan</h2><span class="team__position">Pet Career</span>
+											</div>
+											<div class="team__media"><img src="assets/img/team/2.jpg" alt=""/></div>
+										</div>
+									</div><!-- End / team -->
+									
+								</div>
+								<div class="five-element">
+									
+									<!-- team -->
+									<div class="team">
+										<div class="team__wrapper">
+											<div class="team__captions">
+												<h2 class="team__name">Kara Zor - El</h2><span class="team__position">Pet Keepers</span>
+											</div>
+											<div class="team__media"><img src="assets/img/team/1.jpg" alt=""/></div>
+										</div>
+									</div><!-- End / team -->
+									
+								</div>
+								<div class="five-element offsets-five-element">
+									
+									<!-- team -->
+									<div class="team">
+										<div class="team__wrapper">
+											<div class="team__captions">
+												<h2 class="team__name">Martha Kent</h2><span class="team__position">Pet Career</span>
+											</div>
+											<div class="team__media"><img src="assets/img/team/1.jpg" alt=""/></div>
+										</div>
+									</div><!-- End / team -->
+									
+								</div>
+								<div class="five-element">
+									
+									<!-- team -->
+									<div class="team">
+										<div class="team__wrapper">
+											<div class="team__captions">
+												<h2 class="team__name">Chloe Sullivan</h2><span class="team__position">Pet Career</span>
+											</div>
+											<div class="team__media"><img src="assets/img/team/2.jpg" alt=""/></div>
+										</div>
+									</div><!-- End / team -->
+									
+								</div>
+								<div class="five-element">
+									
+									<!-- team -->
+									<div class="team">
+										<div class="team__wrapper">
+											<div class="team__captions">
+												<h2 class="team__name">Kara Zor - El</h2><span class="team__position">Pet Keepers</span>
+											</div>
+											<div class="team__media"><img src="assets/img/team/1.jpg" alt=""/></div>
+										</div>
+									</div><!-- End / team -->
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End / Section -->
+				
+				
+				<!-- Section -->
+				<section class="md-section little-section" style="background:#F5A600;">
+					<div class="container">
+						
+						<!-- flag -->
+						<div class="flag flag__right"><img src="assets/img/banner/3.png" alt=""/>
+						</div><!-- End / flag -->
+						
+						<div class="row">
+							<div class="col-md-8 col-lg-5 ">
+								
+								<!-- title -->
+								<div class="title title__dark">
+									<h2 class="title__title">Ready to get started?</h2>
+								</div><!-- End / title -->
+								
+							</div>
+							<div class="col-md-4 col-lg-6 offset-0 offset-sm-0 offset-md-0 offset-lg-1 ">
+								<div class="mobile-center">
+									<a class="btn btn-outline-light btn-w210" href="#">Read more
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End / Section -->
+				
 			</div>
-		</header>
-		<div id="content">
-			<section class="content__about">
-				<div class="container">
-					<header class="section__header">
-						<h2 class="section-title text-center">About Us</h2>
-						<p class="section-desc text-center">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla.</p>
-					</header>
-					<section class="section__content">
-						<div class="row">
-							<div class="col-sm-4">
-								<div class="best-three-col">
-									<div class="bestitem__titlewrap">
-										<img class="best-three-col__img" src="images/commons/ionicons.png" alt="">
-										<h3 class="best-three-col__title">Ionicons</h3>
+			<!-- End / Content-->
+			
+			<!-- footer -->
+			<footer class="footer">
+				<div class="footer__content">
+					<div class="container">
+						<div class="row row-eq-height">
+							<div class="col-sm-6 col-md-6 col-lg-6 col-xl-2 "><a class="footer__logo" href="home.html"><img src="assets/img/logo.png" atl=""/></a>
+								
+								<!-- widget -->
+								<div class="widget">
+									<div class="widget-content">
+										
+										<!-- social-icon -->
+										<a class="social-icon social-icon__light" href="#"><i class="social-icon__icon fa fa-facebook"></i>
+										</a><!-- End / social-icon -->
+										
+										
+										<!-- social-icon -->
+										<a class="social-icon social-icon__light" href="#"><i class="social-icon__icon fa fa-twitter"></i>
+										</a><!-- End / social-icon -->
+										
+										
+										<!-- social-icon -->
+										<a class="social-icon social-icon__light" href="#"><i class="social-icon__icon fa fa-behance"></i>
+										</a><!-- End / social-icon -->
+										
+										
+										<!-- social-icon -->
+										<a class="social-icon social-icon__light" href="#"><i class="social-icon__icon fa fa-instagram"></i>
+										</a><!-- End / social-icon -->
+										
 									</div>
-									<p class="best-three-col__desc">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem.</p>
-								</div>
+								</div><!-- End / widget -->
+								
 							</div>
-							<div class="col-sm-4">
-								<div class="best-three-col">
-									<div class="bestitem__titlewrap">
-										<img class="best-three-col__img" src="images/commons/creative.png" alt="">
-										<h3 class="best-three-col__title">Creative Design</h3>
+							<div class="col-sm-6 col-md-6 col-lg-6 col-xl-2 offset-0 offset-sm-0 offset-md-0 offset-lg-0 offset-xl-1 ">
+								
+								<!-- widget -->
+								<div class="widget">
+									<h3 class="widget-title">Service</h3>
+									<div class="widget-content">
+										<ul>
+											<li><a href="#">Categories</a></li>
+											<li><a href="#">Packs</a></li>
+											<li><a href="#">Authors</a></li>
+											<li><a href="#">Top icons</a></li>
+											<li><a href="#">Latest icons</a></li>
+											<li><a href="#">Tags</a></li>
+										</ul>
 									</div>
-									<p class="best-three-col__desc">Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-								</div>
+								</div><!-- End / widget -->
+								
 							</div>
-							<div class="col-sm-4">
-								<div class="best-three-col">
-									<div class="bestitem__titlewrap">
-										<img class="best-three-col__img" src="images/commons/pts.png" alt="">
-										<h3 class="best-three-col__title">Photoshop and Sketch</h3>
+							<div class="col-sm-6 col-md-6 col-lg-6 col-xl-2 offset-0 offset-sm-0 offset-md-0 offset-lg-0 offset-xl-1 ">
+								
+								<!-- widget -->
+								<div class="widget">
+									<h3 class="widget-title">Membership</h3>
+									<div class="widget-content">
+										<ul>
+											<li><a href="#">Flaticon Collections</a></li>
+											<li><a href="#">Support</a></li>
+											<li><a href="#">Contact</a></li>
+											<li><a href="#">About us</a></li>
+											<li><a href="#">Become a creator</a></li>
+										</ul>
 									</div>
-									<p class="best-three-col__desc">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-								</div>
+								</div><!-- End / widget -->
+								
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 offset-0 offset-sm-0 offset-md-0 offset-lg-0 offset-xl-1 ">
+								
+								<!-- widget -->
+								<div class="widget">
+									<h3 class="widget-title">Contact center</h3>
+									<div class="widget-content">
+										<p class="widget-text">But I must explain to you how all this mistaken idea of denouncing pleasure and praising</p>
+										<p class="widget-text">Add : Creative Events Agency - London | New York | Los Angeles</p>
+									</div>
+								</div><!-- End / widget -->
+								
 							</div>
 						</div>
-					</section>
+					</div>
 				</div>
-			</section>
-			<section class="content__ourTeam">
-				<div class="container">
-					<header class="section__header">
-						<h2 class="section-title text-center">Meet Our Team</h2>
-						<p class="section-desc text-center">Curabitur blandit tempus porttitor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-					</header>
-					<section class="section__content">
-						<div class="row">
-							<div class="col-sm-4">
-								<div class="team__member">
-									<img class="img-responsive member__img" src="images/uploads/joyce-hudson.jpg" alt="">
-									<a href="javascript:;" class="member__name">Joyce Hudson</a>
-									<p class="member__position">Founder & Designer</p>
-								</div>
-							</div>
-							<div class="col-sm-4">
-								<div class="team__member">
-									<img class="img-responsive member__img" src="images/uploads/angela-campbell.jpg" alt="">
-									<a href="javascript:;" class="member__name">Angela Campbell</a>
-									<p class="member__position">Project Manager</p>
-								</div>
-							</div>
-							<div class="col-sm-4">
-								<div class="team__member">
-									<img class="img-responsive member__img" src="images/uploads/james-walker.jpg" alt="">
-									<a href="javascript:;" class="member__name">James Walker</a>
-									<p class="member__position">Developer</p>
-								</div>
-							</div>
-						</div>
-					</section>
+				<div class="footer__bottom">
+					<div class="container">
+						<div class="footer__copyright">2018 &copy; Copyright <a href="http://megadrupal.com" title="">MegaDrupal</a>.</div>
+						<div class="backtotop"><i class="fa fa-angle-up"></i></div>
+					</div>
 				</div>
-			</section>
-			<section class="content__download content__download-about">
-				<div class="container">
-					<section class="section__content">
-						<div class="row">
-							<div class="col-sm-7 col-xs-12">
-								<h2 class="download__title download__title-about">Do You Like Wapik? Download it Now</h2>
-								<p class="download__desc download__desc-about">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-							</div>
-							<div class="col-sm-5 col-xs-12">
-								<a href="javascript:;" class="download__link download__link-about text-center ">DOWNLOAD NOW! - FREE FOREVER</a>
-							</div>
-						</div>
-					</section>
-				</div>
-			</section>
+			</footer><!-- End / footer -->
+			
 		</div>
-		<footer id="footer">
-			<div class="container">
-				<div class="footer__main">
-					<div class="row">
-						<div class="col-sm-3 col-xs-6">
-							<h4 class="footer__logo"><img src="images/commons/logo-green.png" alt=""></h4>
-							<ul class="list-unstyled">
-								<li>@: <span class="footer__email">hi@wapik.com</span></li>
-								<li>p: +62 202 555 0117</li>
-								<li>a: 610 Overlook Circle Suite 323 Kalamazoo, MI 49009</li>
-							</ul>
-						</div>
-						<div class="col-sm-3 col-xs-6">
-							<h4 class="footer__title">Company</h4>
-							<ul class="list-unstyled">
-								<li><a class="footer-menu__item" href="javascript:;">Home</a></li>
-								<li><a class="footer-menu__item" href="javascript:;">About Us</a></li>
-								<li><a class="footer-menu__item" href="javascript:;">Pricing</a></li>
-								<li><a class="footer-menu__item" href="javascript:;">Contact Us</a></li>
-							</ul>
-						</div>
-						<div class="col-sm-3 col-xs-6">
-							<h4 class="footer__title">Others</h4>
-							<ul class="list-unstyled">
-								<li><a class="footer-menu__item" href="javascript:;">Help & Support</a></li>
-								<li><a class="footer-menu__item" href="javascript:;">Privacy Policy</a></li>
-								<li><a class="footer-menu__item" href="javascript:;">Terms</a></li>
-								<li><a class="footer-menu__item" href="javascript:;">Sitemap</a></li>
-							</ul>
-						</div>
-						<div class="col-sm-3 col-xs-6">
-							<h4 class="footer__title">Newsletter</h4>
-							<ul class="list-unstyled">
-								<li class="footer__subcribe">Subscribe to our newsletter and get all the cool news</li>
-								<li>
-									<form action="" method="post" class="form__email">
-										<input type="email" placeholder="Enter Email" class="footer__input pull-left"/>
-										<input type="submit" value="" class="footer__submit pull-right"/>
-									</form>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="footer__sub">
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="footer__copyright">
-								All rights reserved 2015.
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="footer__social">
-								<a class="social__link" href="javascript:;"><img src="images/commons/bg-twitter.png" alt="" class="social__icon"></a>
-								<a class="social__link" href="javascript:;"><img src="images/commons/bg-fb.png" alt="" class="social__icon"></a>
-								<a class="social__link" href="javascript:;"><img src="images/commons/bg-camera.png" alt="" class="social__icon"></a>
-								<a class="social__link" href="javascript:;"><img src="images/commons/bg-ball.png" alt="" class="social__icon"></a>
-								<a class="social__link" href="javascript:;"><img src="images/commons/bg-last.png" alt="" class="social__icon"></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</div>
-</body>
-<script type="text/javascript" src="js/main.js"></script>
+		<!-- Vendors-->
+		<script src="assets/vendors/_jquery/jquery.min.js"></script>
+		<script src="assets/vendors/accordion/awe-accordion.min.js"></script>
+		<script src="assets/vendors/hoverdir/jquery.hoverdir.js"></script>
+		<script src="assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+		<script src="assets/vendors/isotope-layout/isotope.pkgd.js"></script>
+		<script src="assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+		<script src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script src="assets/vendors/masonry-layout/masonry.pkgd.js"></script>
+		<script src="assets/vendors/swiper/swiper.jquery.js"></script>
+		<script src="assets/vendors/menu/menu.js"></script>
+		<script src="assets/vendors/select2/select2.js"></script>
+		<script src="assets/vendors/tabs/awe-tabs.min.js"></script>
+		<script src="assets/vendors/wow/wow.js"></script>
+		<script src="assets/vendors/tooltip/bootstrap-tooltip.js"></script>
+		<script src="assets/vendors/bootstrap4/popper.min.js"></script>
+		<script src="assets/vendors/bootstrap4/bootstrap.min.js"></script>
+		<script src="assets/vendors/jquery.countUp/jquery.countup.min.js"></script>
+		<script src="assets/vendors/jquery.countdown/jquery.countdown.min.js"></script>
+		<script src="assets/vendors/jquery.countUp/jquery.countup.min.js"></script>
+		<script src="assets/vendors/tabs/awe-tabs.min.js"></script>
+		<script src="assets/vendors/timecircles/TimeCircles.js"></script>
+		<script src="assets/vendors/holder/holder.min.js"></script>
+		<!-- App-->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRYsvAtLSNQWY-8zo8jCub7GmsDnyH5vw&amp;callback=initMap"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
 </html>

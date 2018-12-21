@@ -1,0 +1,25 @@
+@import "../../mixins";
+.awemenu-classic {
+	&.awemenu-left,
+	&.awemenu-right {
+		.awemenu {
+			@include background-gradient(#fefefe, #c1c1c1);
+			background-color: #fff;
+			> .awemenu-item {
+				> a {
+					border: 0;
+					border-bottom: 1px solid rgba(#000, .05);
+					border-top: 1px solid rgba(#fff, .3);
+					padding: 15px 20px;
+					line-height: 20px;
+					&:before, &:after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	&.awemenu-right {
+		float: right;
+	}
+}

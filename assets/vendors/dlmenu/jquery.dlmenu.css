@@ -1,0 +1,247 @@
+@charset "UTF-8";
+.dcm__nav {
+  position: fixed;
+  left: 0;
+  width: 300px;
+  height: calc(100vh);
+  background: #1c1d22;
+}
+.dcm__wrapper {
+  position: absolute;
+  top: 3.5em;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+}
+.dcm__wrapper ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  overflow: hidden;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  padding-right: 17px;
+  list-style-type: none;
+}
+.dcm__wrapper ul.dcm__level--current {
+  visibility: visible;
+}
+.dcm__wrapper ul > li {
+  display: block;
+  width: 100%;
+}
+.dcm__wrapper ul > li > a {
+  font-weight: 600;
+  position: relative;
+  display: block;
+  padding: 1em 2.5em 1em 1.5em;
+  color: #bdbdbd;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
+}
+.dcm__wrapper ul > li.menu-item-has-children > a::after {
+  content: "?";
+  font-family: "feather";
+  position: absolute;
+  right: 0;
+  padding: 0.25em 1.25em;
+  color: #2a2b30;
+}
+.dcm__wrapper ul > li > a:hover, .dcm__wrapper ul > li.menu-item-has-children > a:hover::after {
+  color: #5c5edc;
+}
+.dcm__wrapper ul > li.current-menu-item > a::before {
+  content: "·";
+  font-size: 1.5em;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  left: 0.5em;
+  height: 4px;
+  color: #5c5edc;
+}
+ul.dcm-animate-outToRight, ul.dcm-animate-outToLeft,
+ul.dcm-animate-inFromLeft, ul.dcm-animate-inFromRight {
+  visibility: visible;
+}
+
+.dcm-animate-outToRight > li {
+  animation: dcmOutToRightTransform 0.6s both cubic-bezier(0.7, 0, 0.3, 1);
+}
+.dcm-animate-outToLeft > li {
+  animation: dcmOutToLeftTransform 0.6s both cubic-bezier(0.7, 0, 0.3, 1);
+}
+.dcm-animate-inFromLeft > li {
+  animation: dcmInFromLeftTransform 0.6s both cubic-bezier(0.7, 0, 0.3, 1);
+}
+.dcm-animate-inFromRight > li {
+  animation: dcmInFromRightTransform 0.6s both cubic-bezier(0.7, 0, 0.3, 1);
+}
+.dcm-animate-outToLeft > li > a, .dcm-animate-outToRight > li > a {
+  animation: dcmOpacityOut 0.6s both cubic-bezier(0.7, 0, 0.3, 1);
+}
+.dcm-animate-inFromLeft > li > a, .dcm-animate-inFromRight > li > a {
+  animation: dcmOpacityIn 0.6s both cubic-bezier(0.7, 0, 0.3, 1);
+}
+.dcm__breadcrumbs {
+  font-size: 0.65em;
+  line-height: 1;
+  position: relative;
+  padding: 2.5em 3.75em 1.5em 2.5em;
+}
+.dcm__breadcrumbs a {
+  font-weight: bold;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #5c5edc;
+}
+.dcm__breadcrumbs a:last-child {
+  pointer-events: none;
+}
+.dcm__breadcrumbs a:hover {
+  color: #8182e0;
+}
+.dcm__breadcrumbs a:not(:last-child)::after {
+  content: "?";
+  font-family: "feather";
+  display: inline-block;
+  padding: 0 0.5em;
+  color: #33353e;
+}
+.dcm__breadcrumbs a:not(:last-child):hover::after {
+  color: #33353e;
+}
+.dcm__back {
+  font-size: 1.05em;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right: 2.25em;
+  margin: 0;
+  padding: 1.365em 0.65em 0 0;
+  cursor: pointer;
+  color: #2a2b30;
+  border: none;
+  background: none;
+}
+.dcm__back--hidden {
+  pointer-events: none;
+  opacity: 0;
+}
+.dcm__back:hover, .dcm__back:focus {
+  color: #fff;
+  outline: none;
+}
+.dcm__icon {
+  font-family: "feather";
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-transform: none;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  speak: none;
+}
+.dcm__icon--arrow-left:before {
+  content: "?";
+}
+.dcm__icon--menu:before {
+  content: "?";
+}
+.dcm__icon--cross:before {
+  content: "?";
+}
+.dcm__action {
+  position: absolute;
+  display: block;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.dcm__action:focus {
+  outline: none;
+}
+.dcm__action--open, .dcm__action--close {
+  display: none;
+}
+.dcm__action--open {
+  font-size: 1.5em;
+  top: 1em;
+  left: 1em;
+  color: #fff;
+  position: fixed;
+  z-index: 1000;
+}
+.dcm__action--close {
+  font-size: 1.1em;
+  top: 1.25em;
+  right: 1em;
+  color: #45464e;
+}
+@media screen and (max-width: 40em) {
+  .dcm__action--open, .dcm__action--close {
+    display: block;
+  }
+  .dcm__nav {
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translate3d(-100%, 0, 0);
+    transition: transform 0.3s;
+  }
+  .dcm__nav--open {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes dcmOpacityOut {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes dcmOpacityIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes dcmOutToRightTransform {
+  to {
+    margin-left: 100%;
+  }
+}
+@keyframes dcmOutToLeftTransform {
+  to {
+    margin-left: -100%;
+  }
+}
+@keyframes dcmInFromLeftTransform {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+@keyframes dcmInFromRightTransform {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,123 @@
+
+$color-default: #629aa9;
+@import "../../mixins";
+.awemenu-fullscreen {
+	background-color: $color-default;
+    padding: 15px;
+    .awemenu-bars {
+    	color: #fff;
+    }
+    .awemenu-close {
+    	position: absolute;
+    	top: 10px; right: 10px;
+    	.amm-clear {
+    		font-size: 40px;
+    	}
+    }
+    .awemenu {
+    	.awemenu-item {
+			> a {
+				font-family: 'Playfair Display', serif;
+				font-size: 36px;
+				font-weight: 700;
+				padding: 38px 15px;
+				color: #fff;
+				text-decoration: none;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				@include transition;
+				span {
+					font-size: 16px;
+					font-weight: 400;
+					font-style: italic;
+					display: block;
+					margin-bottom: 5px;
+					text-transform: none;
+					line-height: normal;
+					letter-spacing: 0;
+				}
+			}
+		}
+		> .awemenu-item {
+			&:hover {
+				> a {
+					padding: 50px 15px;
+					background-color: rgba(#fff, .15);
+				}
+			}
+		}
+		.awemenu-submenu {
+			padding-top: 5px;
+			padding-bottom: 5px;
+			.awemenu-item {
+				> a {
+					font-size: 18px;
+					padding: 15px;
+				}
+			}
+		}
+    }
+}
+
+.awemenu-fullscreen-wrapper {
+	background-color: rgba($color-default, .95);
+	padding: 40px 0;
+	.awemenu-megamenu {
+		background-color: #fff;
+	}
+}
+
+/* Effect link */
+.awemenu-fullscreen {
+    .awemenu {
+    	.awemenu-item {
+			opacity: 0;
+			visibility: hidden;
+			@include translate(0, 40px);
+			@include transition(all .6s ease);
+		}
+		> li {
+			&:nth-of-type(1) {
+				@include transition-delay(.6s);
+			}
+			&:nth-of-type(2) {
+				@include transition-delay(.75s);
+			}
+			&:nth-of-type(3) {
+				@include transition-delay(.9s);
+			}
+			&:nth-of-type(4) {
+				@include transition-delay(1.05s);
+			}
+			&:nth-of-type(5) {
+				@include transition-delay(1.2s);
+			}
+		}
+	}
+}
+.awemenu-active {
+	&.awemenu-fullscreen {
+		.awemenu {
+	    	.awemenu-item {
+				opacity: 1;
+				visibility: visible;
+				@include translate(0, 0);
+			}
+		}
+	}
+}
+
+
+/* Effect wrapper */
+.awemenu-fullscreen-wrapper {
+	top: 50%;
+	opacity: 0;
+	@include transition(all .6s ease);
+}
+
+.awemenu-active {
+	.awemenu-fullscreen-wrapper {
+		top: 0;
+		opacity: 1;
+	}
+}

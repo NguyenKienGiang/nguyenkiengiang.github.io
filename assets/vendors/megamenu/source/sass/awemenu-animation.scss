@@ -1,0 +1,280 @@
+@import "mixins";
+// Animations
+.awemenu-animation {
+	.awemenu {
+		@include transition;
+	}
+	.awemenu-submenu {
+		display: block;
+		@include transition;
+	}
+
+   
+   /* Fade */
+   .awemenu-fade {
+      > .awemenu-submenu {
+         visibility: hidden;
+         opacity: 0;
+      }
+      &.awemenu-active {
+         > .awemenu-submenu {
+            visibility: visible;
+            opacity: 1;
+         }
+      }
+   }
+
+   /* Fadeup */
+   .awemenu-fadeup {
+      > .awemenu-submenu {
+         visibility: hidden;
+         opacity: 0;
+         @include translate(0, 30px);
+      }
+      &.awemenu-active {
+         > .awemenu-submenu {
+            visibility: visible;
+            opacity: 1;
+            @include transform(none);
+         }
+      }
+   }
+
+
+   /* Fadedown */
+   .awemenu-fadedown {
+      > .awemenu-submenu {
+         visibility: hidden;
+         opacity: 0;
+         @include translate(0,-30px);
+      }
+      &.awemenu-active {
+         > .awemenu-submenu {
+            visibility: visible;
+            opacity: 1;
+            @include transform(none);
+         }
+      }
+   }
+
+   /* Fadeleft */
+   .awemenu-fadeleft {
+      > .awemenu-submenu {
+         visibility: hidden;
+         opacity: 0;
+         @include translate(-100px,0);
+      }
+      &.awemenu-active {
+         > .awemenu-submenu {
+            visibility: visible;
+            opacity: 1;
+            @include transform(none);
+         }
+      }
+   }
+
+   /* Faderight */
+   .awemenu-faderight {
+      > .awemenu-submenu {
+         visibility: hidden;
+         opacity: 0;
+         @include translate(100px,0);
+      }
+      &.awemenu-active {
+         > .awemenu-submenu {
+            visibility: visible;
+            opacity: 1;
+            @include transform(none);
+         }
+      }
+   }
+
+   /* Rotatezoom */
+   .awemenu-zoom {
+      > .awemenu-submenu {
+         visibility: hidden;
+         opacity: 0;
+         @include scale(0.5);
+      }
+      &.awemenu-active {
+         > .awemenu-submenu {
+            visibility: visible;
+            opacity: 1;
+            @include transform(none);
+         }
+      }
+   }
+
+   /* Rotateupleft */
+   .awemenu-rotateupleft {
+      > .awemenu-submenu {
+         visibility: hidden;
+         opacity: 0;
+         @include transform-origin(0 0);
+         @include rotate(10);
+      }
+      &.awemenu-active {
+         > .awemenu-submenu {
+            visibility: visible;
+            opacity: 1;
+            @include transform(none);
+         }
+      }
+   }
+
+   /* Rotateupright */
+   .awemenu-rotateupright {
+      > .awemenu-submenu {
+         visibility: hidden;
+         opacity: 0;
+         @include transform-origin(100% 0);
+         @include rotate(-10);
+      }
+      &.awemenu-active {
+         > .awemenu-submenu {
+            visibility: visible;
+            opacity: 1;
+            @include transform(none);
+         }
+      }
+   }
+
+   /* Flipx */
+   .awemenu-flipx {
+      > .awemenu-submenu {
+         visibility: hidden;
+         opacity: 0;
+         @include transform-origin(50% 0);
+         @include transform(perspective(400em) rotateX(-45deg));
+      }
+      &.awemenu-active {
+         > .awemenu-submenu {
+            visibility: visible;
+            opacity: 1;
+            @include transform(none);
+         }
+      }
+   }
+
+   /* Flipy */
+   .awemenu-flipy {
+      > .awemenu-submenu {
+         visibility: hidden;
+         opacity: 0;
+         @include transform-origin(50% 0);
+         @include transform(perspective(400em) rotateY(45deg));
+      }
+      &.awemenu-active {
+         > .awemenu-submenu {
+            visibility: visible;
+            opacity: 1;
+            @include transform(none);
+         }
+      }
+   }
+
+   /* Flipyright */
+   .awemenu-flipyright {
+      > .awemenu-submenu {
+         visibility: hidden;
+         opacity: 0;
+         @include transform-origin(100% 50%);
+         @include transform(perspective(400em) rotateY(45deg));
+      }
+      &.awemenu-active {
+         > .awemenu-submenu {
+            visibility: visible;
+            opacity: 1;
+            @include transform(none);
+         }
+      }
+   }
+
+   /* Flipyleft */
+   .awemenu-flipyleft {
+      > .awemenu-submenu {
+         visibility: hidden;
+         opacity: 0;
+         @include transform-origin(0 50%);
+         @include transform(perspective(400em) rotateY(-45deg));
+      }
+      &.awemenu-active {
+         > .awemenu-submenu {
+            visibility: visible;
+            opacity: 1;
+            @include transform(none);
+         }
+      }
+   }
+
+   /* Slideleft */
+   .awemenu-slideleft {
+      > .awemenu-submenu {
+         visibility: hidden;
+         opacity: 0;
+         @include translate(-100%,0);
+         -webkit-transition-timing-function: cubic-bezier(0,.95,.42,1.28);
+         -moz-transition-timing-function: cubic-bezier(0,.95,.42,1.28);
+         transition-timing-function: cubic-bezier(0,.95,.42,1.28);
+      }
+      &.awemenu-active {
+         > .awemenu-submenu {
+            visibility: visible;
+            opacity: 1;
+            @include transform(none);
+         }
+      }
+   }
+
+   /* Slideright */
+   .awemenu-slideright {
+      > .awemenu-submenu {
+         visibility: hidden;
+         opacity: 0;
+         @include translate(100%,0);
+         -webkit-transition-timing-function: cubic-bezier(0,.95,.42,1.28);
+         -moz-transition-timing-function: cubic-bezier(0,.95,.42,1.28);
+         transition-timing-function: cubic-bezier(0,.95,.42,1.28);
+      }
+      &.awemenu-active {
+         > .awemenu-submenu {
+            visibility: visible;
+            opacity: 1;
+            @include transform(none);
+         }
+      }
+   }
+
+   /* Fadeskew */
+   .awemenu-fadeskew {
+      > .awemenu-submenu {
+         visibility: hidden;
+         opacity: 0;
+         @include transform(translate(-100px, 0) skewX(-10deg));
+      }
+      &.awemenu-active {
+         > .awemenu-submenu {
+            visibility: visible;
+            opacity: 1;
+            @include transform(none);
+         }
+      }
+   }
+
+   /* Scaleup */
+   .awemenu-scaleup {
+      > .awemenu-submenu {
+         visibility: hidden;
+         opacity: 0;
+         @include transform(translate(0, 50px) scaleX(.8));
+      }
+      &.awemenu-active {
+         > .awemenu-submenu {
+            visibility: visible;
+            opacity: 1;
+            @include transform(none);
+         }
+      }
+   }
+
+}

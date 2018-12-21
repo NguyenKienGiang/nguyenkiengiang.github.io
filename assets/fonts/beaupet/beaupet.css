@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'beaupet';
+  src:  url('fonts/beaupet.eot?9j6o64');
+  src:  url('fonts/beaupet.eot?9j6o64#iefix') format('embedded-opentype'),
+    url('fonts/beaupet.ttf?9j6o64') format('truetype'),
+    url('fonts/beaupet.woff?9j6o64') format('woff'),
+    url('fonts/beaupet.svg?9j6o64#beaupet') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.beaupet {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'beaupet' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.beaupet-lotion-pet:before {
+  content: "\e900";
+}
+.beaupet-syringe-pet:before {
+  content: "\e901";
+}
+.beaupet-toy-pet:before {
+  content: "\e902";
+}
+.beaupet-food-pet:before {
+  content: "\e903";
+}
+.beaupet-load-pet .path1:before {
+  content: "\e904";
+  color: rgb(0, 0, 0);
+}
+.beaupet-load-pet .path2:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(49, 172, 184);
+}
